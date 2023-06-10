@@ -1,7 +1,7 @@
 import * as request from 'supertest';
 import { Test, TestingModule } from '@nestjs/testing';
 import { INestApplication } from '@nestjs/common';
-import { PaymentRepository } from '../../src/repository/PaymentRepository';
+import { PaymentRepository } from '../../src/repository/TicketRepository';
 import { PaymentController } from '../../src/controller/PaymentController';
 import {
   CREDIT_BANK_API,

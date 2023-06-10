@@ -1,19 +1,12 @@
 # Template Method
 
-## What is the Factory Pattern?
+## What is the Template Method Pattern?
 
-The Factory Pattern is a creational design pattern that provides an interface for creating objects in a superclass, but
-allows subclasses to alter the type of objects that will be created. This pattern provides a way to delegate the
-responsibility of object instantiation to subclasses, while maintaining a common interface across all classes.
+[Template Method](https://refactoring.guru/design-patterns/template-method)
 
-## When to use the Factory Pattern?
+## When to use the Template Method Pattern?
 
-The Factory Pattern is useful when:
-
-A class cannot anticipate the type of objects it needs to create.
-A class wants to delegate the responsibility of object creation to its subclasses.
-A class wants to provide a common interface for creating objects, but allow subclasses to alter the types of objects
-that are created.
+The Template Method pattern is used when you want to define the skeleton or structure of an algorithm but allow subclasses to provide the implementation for certain steps of the algorithm. It is useful in scenarios where you have a common set of steps or behaviors that need to be followed, but the specific implementation details may vary.
 
 ## Task
 This codebase that simulates different product sales scenarios. It includes services for selling recharges, PIN codes, and tickets. The code is organized to accommodate common functionalities and specific logic for each type of product sale. The goal of the refactoring process is to apply the Template Method design pattern to improve code structure and reusability.
