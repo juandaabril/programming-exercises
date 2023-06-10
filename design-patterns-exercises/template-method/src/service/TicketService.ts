@@ -1,11 +1,11 @@
 import { HttpService } from '@nestjs/axios';
 import { Inject, Injectable } from '@nestjs/common';
-import { ProductRepository } from 'src/repository/ProductRepository';
-import { SalesRepository } from 'src/repository/SalesRepository';
-import { SalesLimitRepository } from 'src/repository/SalesLimitRepository';
 import { firstValueFrom } from 'rxjs';
-import { TicketRepository } from 'src/repository/TicketRepository';
-import { Ticket } from 'src/entity/Ticket';
+import { Ticket } from '../entity/Ticket';
+import { ProductRepository } from '../repository/ProductRepository';
+import { SalesLimitRepository } from '../repository/SalesLimitRepository';
+import { SalesRepository } from '../repository/SalesRepository';
+import { TicketRepository } from '../repository/TicketRepository';
 
 export const TICKET_API = 'https://www.ticket.com/sell';
 

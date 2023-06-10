@@ -1,9 +1,9 @@
 import { Inject, Injectable } from '@nestjs/common';
-import { ProductRepository } from 'src/repository/ProductRepository';
-import { SalesRepository } from 'src/repository/SalesRepository';
-import { SalesLimitRepository } from 'src/repository/SalesLimitRepository';
-import { PinRepository } from 'src/repository/PinRepository';
-import { Pin } from 'src/entity/Pin';
+import { Pin } from '../entity/Pin';
+import { PinRepository } from '../repository/PinRepository';
+import { ProductRepository } from '../repository/ProductRepository';
+import { SalesLimitRepository } from '../repository/SalesLimitRepository';
+import { SalesRepository } from '../repository/SalesRepository';
 
 @Injectable()
 export class PinService {

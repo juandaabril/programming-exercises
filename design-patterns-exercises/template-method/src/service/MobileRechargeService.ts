@@ -1,11 +1,11 @@
 import { HttpService } from '@nestjs/axios';
 import { Inject, Injectable } from '@nestjs/common';
-import { ProductRepository } from 'src/repository/ProductRepository';
-import { SalesRepository } from 'src/repository/SalesRepository';
-import { MobileRechargeRepository } from 'src/repository/MobileRechargeRepository';
-import { SalesLimitRepository } from 'src/repository/SalesLimitRepository';
 import { firstValueFrom } from 'rxjs';
-import { MobileRecharge } from 'src/entity/MobileRecharge';
+import { ProductRepository } from '../repository/ProductRepository';
+import { MobileRecharge } from '../entity/MobileRecharge';
+import { MobileRechargeRepository } from '../repository/MobileRechargeRepository';
+import { SalesLimitRepository } from '../repository/SalesLimitRepository';
+import { SalesRepository } from '../repository/SalesRepository';
 
 export const RECHARGE_API = 'https://www.claro.com/recharge';
 
