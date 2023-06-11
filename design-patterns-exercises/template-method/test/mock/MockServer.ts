@@ -8,7 +8,7 @@ export const handlers = [
     return res(
       ctx.status(200),
       ctx.json({
-        id: 1,
+        providerId: 1,
       }),
     );
   }),
@@ -17,7 +17,7 @@ export const handlers = [
     return res(
       ctx.status(200),
       ctx.json({
-        id: 1,
+        providerId: 1,
       }),
     );
   }),
