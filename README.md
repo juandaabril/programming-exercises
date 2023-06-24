@@ -14,3 +14,4 @@ The exercises in this repository cover a variety of programming topics, includin
 
 
 ## AWS Integrations
+* [AWS S3](./aws-s3)
