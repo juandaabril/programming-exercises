@@ -4,14 +4,13 @@ Welcome to the "programming-exercises" repository! This is a collection of progr
 The exercises in this repository cover a variety of programming topics, including object-oriented design principles, inheritance and polymorphism, generic programming, and more. Each exercise is designed to challenge you and help you develop your problem-solving skills, while also providing opportunities to apply the concepts you learn in a practical setting.
 
 ## OOP
-* [Encapsulation](./oop-exercises/encapsulation)
-* [Inheritance](./oop-exercises/inheritance)
+* [Encapsulation](./oop-encapsulation)
+* [Inheritance](./oop-inheritance)
 
 ## Design Patterns
-* [Factory](./design-patterns-exercises/factory)
-
-
-## Refactoring
+* [Factory](./pattern-factory)
+* [Template-Method](./pattern-template-method)
+* [Singleton](./pattern-singleton)
 
 
 ## AWS Integrations
