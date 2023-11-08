@@ -22,7 +22,12 @@ stored in S3.
 You can run this command in your command line interface to execute the transfer request using curl. Make sure that your
 server is running on port 3000, and adjust the URL accordingly based on your specific setup.
 
+*Upload a file*
 ```
-curl -X POST -H "Content-Type: multipart/form-data" -F "file=@path/to/file.jpg" http://localhost:3000/upload/1f2d3e4c-5b6a-7d8c-9e0f-1a2b3c4d5e6f
-curl -O http://localhost:3000/image/1f2d3e4c-5b6a-7d8c-9e0f-1a2b3c4d5e6f/file.jpg
+curl -X POST -H "Content-Type: multipart/form-data" -F "file=@path/to/file.jpg" http://localhost:8080/upload/1f2d3e4c-5b6a-7d8c-9e0f-1a2b3c4d5e6f
+```
+
+*Get a file*
+```
+curl -O http://localhost:8080/image/1f2d3e4c-5b6a-7d8c-9e0f-1a2b3c4d5e6f/file.jpg
 ```
