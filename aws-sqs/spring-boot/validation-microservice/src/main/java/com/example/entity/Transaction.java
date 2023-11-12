@@ -15,28 +15,28 @@ import lombok.NoArgsConstructor;
 @Table(name = "transactions")
 public class Transaction {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private UUID id;
+  @Id
+  @GeneratedValue(strategy = GenerationType.AUTO)
+  private UUID id;
 
-    @Column(name = "transaction_id")
-    private UUID transactionId;
+  @Column(name = "transaction_id")
+  private UUID transactionId;
 
-    @Column(name = "transaction_date")
-    private LocalDate transactionDate;
+  @Column(name = "transaction_date")
+  private LocalDate transactionDate;
 
-    @Column(name = "transaction_type")
-    private String transactionType;
+  @Column(name = "transaction_type")
+  private String transactionType;
 
-    @Column(name = "amount")
-    private BigDecimal amount;
+  @Column(name = "amount")
+  private BigDecimal amount;
 
-    @Column(name = "account_number")
-    private String accountNumber;
+  @Column(name = "account_number")
+  private String accountNumber;
 
-    @Column(name = "description")
-    private String description;
+  @Column(name = "description")
+  private String description;
 
-    @Column(name = "success")
-    private boolean success;
+  @Column(name = "success")
+  private boolean success;
 }

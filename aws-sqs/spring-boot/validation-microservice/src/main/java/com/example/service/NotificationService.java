@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @Log
 public class NotificationService {
 
-    public void notify(Transaction transaction) {
-        log.info("Send notification for:" + transaction);
-    }
+  public void notify(Transaction transaction) {
+    log.info("Send notification for:" + transaction);
+  }
 }

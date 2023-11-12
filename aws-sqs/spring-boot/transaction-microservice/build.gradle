@@ -31,7 +31,6 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 
-
 spotless {
   format 'misc', {
     // define the files to apply `misc` to

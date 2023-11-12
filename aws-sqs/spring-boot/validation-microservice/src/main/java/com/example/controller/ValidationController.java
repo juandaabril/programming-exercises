@@ -17,18 +17,18 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class ValidationController {
 
-    private final ProcessService processService;
-    private final TransactionRepository transactionRepository;
+  private final ProcessService processService;
+  private final TransactionRepository transactionRepository;
 
-    @PostMapping("/validate")
-    @SneakyThrows
-    public void validate(@RequestBody byte[] file) {
-        Resource resource = new ByteArrayResource(file);
-        processService.process(resource);
-    }
+  @PostMapping("/validate")
+  @SneakyThrows
+  public void validate(@RequestBody byte[] file) {
+    Resource resource = new ByteArrayResource(file);
+    processService.process(resource);
+  }
 
-    @GetMapping()
-    public List<Transaction> get() {
-        return transactionRepository.findAll();
-    }
+  @GetMapping()
+  public List<Transaction> get() {
+    return transactionRepository.findAll();
+  }
 }
