@@ -9,24 +9,23 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/payment")
 public class PaymentController {
-    private final PaymentService paymentService;
+  private final PaymentService paymentService;
 
-    public PaymentController(PaymentService paymentService) {
-        this.paymentService = paymentService;
-    }
+  public PaymentController(PaymentService paymentService) {
+    this.paymentService = paymentService;
+  }
 
-    @PostMapping
-    public void pay(@RequestBody PaymentRequest request) {
-        paymentService.pay(
-            request.getMethod(),
-            request.getAmount(),
-            request.getCardNumber(),
-            request.getCardExpDate(),
-            request.getCardCvv(),
-            request.getPaypalEmail(),
-            request.getPaypalPassword(),
-            request.getBankAccountNumber(),
-            request.getBankRoutingNumber()
-        );
-    }
+  @PostMapping
+  public void pay(@RequestBody PaymentRequest request) {
+    paymentService.pay(
+        request.getMethod(),
+        request.getAmount(),
+        request.getCardNumber(),
+        request.getCardExpDate(),
+        request.getCardCvv(),
+        request.getPaypalEmail(),
+        request.getPaypalPassword(),
+        request.getBankAccountNumber(),
+        request.getBankRoutingNumber());
+  }
 }
