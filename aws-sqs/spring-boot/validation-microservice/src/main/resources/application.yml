@@ -1,0 +1,14 @@
+server:
+  port: 8081
+  tomcat:
+    accesslog:
+      enabled: true
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:mydb;mode=postgresql
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect

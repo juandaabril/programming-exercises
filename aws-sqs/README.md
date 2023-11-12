@@ -26,5 +26,5 @@ sequenceDiagram
   Transactions->>SQS: Send message
   SQS->>Validations: Receive message
   Validations->>S3: Download CSV file
-  Validations->>S3: Process CSV file
+  Validations->>Validations: Process CSV file
 ```

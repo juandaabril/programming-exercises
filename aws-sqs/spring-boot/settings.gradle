@@ -1,0 +1,4 @@
+rootProject.name = 'aws-sqs-spring-boot'
+
+include 'transaction-microservice'
+include 'validation-microservice'
