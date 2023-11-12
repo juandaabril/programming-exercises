@@ -30,6 +30,7 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 
+
 spotless {
   format 'misc', {
     // define the files to apply `misc` to
@@ -40,11 +41,13 @@ spotless {
   }
 
   java {
-    // don't need to set target, it is inferred from java
+    removeUnusedImports()
 
     // apply a specific flavor of google-java-format
-    googleJavaFormat().aosp().reflowLongStrings().skipJavadocFormatting()
+    //eclipse()
+    googleJavaFormat("1.18.1")
     // fix formatting of type annotations
     formatAnnotations()
+    trimTrailingWhitespace()
   }
 }
